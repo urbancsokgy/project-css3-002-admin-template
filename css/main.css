@@ -2,13 +2,13 @@
     box-sizing: border-box;
   }
   html{
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 90%;
   font-family: 'Montserrat', sans-serif;
   }
   body{
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 90%;
     margin: 0;
   }
 
@@ -52,7 +52,7 @@ flex-wrap: nowrap;
     
 }
 .search__input{
-    text-align: end;
+    
     border: 1px solid rgb(74, 122, 224);
     border-radius:  4px 0 0 4px;
     padding: .375rem .75rem;
@@ -94,7 +94,7 @@ main{
 }
 aside{
   flex-basis: 25vw;
-  height: 100vh;
+  height: 92vh;
   background-color: rgb(33,37,41);
 }
 
@@ -118,9 +118,13 @@ ul li{
 }
 
 ul li a{ 
-  
+  color: white;
   text-decoration: none;
+  font-weight: 200;
   /* display: block; */
+}
+ul li a:hover{ 
+ background-color: rgba(255, 255, 255, .5);
 }
 
 .active{
@@ -168,7 +172,7 @@ margin-top: 1rem;
 .main__card p{
     font-size: .8rem;    
 }
-span{
+.arrow--span{
     font-size: .5rem;   
     font-weight: 100;
     float: right; 
@@ -210,4 +214,38 @@ span{
 }
 .main__card--red{
     background-color: rgb(220,53,69);
+}
+/*media*/
+@media screen and (max-width: 700px){
+.menu__item{
+  display: none;
+}
+aside{
+  flex-basis: 20vw;  
+}
+section{
+  flex-basis: 80vw;  
+}
+.main__cards{
+  flex-direction: column; 
+}
+  .main__card{ 
+      flex-basis: auto;   
+  }
+}
+@media screen and (max-width: 750px){
+.header__menu{
+  flex-basis: 15vw; 
+}
+
+.header__search{
+ 
+  flex-basis: 60vw; 
+}
+.search__input{
+  width: 120px;
+}
+.header--dark{
+   flex-wrap: wrap;
+}
 }
