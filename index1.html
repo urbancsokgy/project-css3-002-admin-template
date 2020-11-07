@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet"  type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/7758854a69.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@50;100;200;300;600&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <aside>
+          <nav class="main__nav">
+              <ul class="nav__ul">
+                <li>CORE</li>
+                <li><i class="fas fa-tachometer-alt"></i> <a  class="active" href="#"> Dashboard</a></li>
+                <li>INTERFACE </li>
+                <li><p class="nav__p"><i class="fas fa-columns"></i></p><a href="#"></a> Layouts <span><i class="fas fa-chevron-right"></i></span></li>
+                <li><p class="nav__p"><i class="fas fa-book-open"></i></p><a href="#"></a> Pages <span><i class="fas fa-chevron-right"></i></span></li>
+                <li>ADDONS</li>
+                <li><p class="nav__p"><i class="fas fa-chart-area"></i></p><a href="#"></a> Charts</li>
+                <li><p class="nav__p"><i class="fas fa-table"></i></p><a href="#"></a> Tables</li>
+              </ul>
+          </nav>
+        </aside>
+    
+        <section class="content">
+          <h1>Dashboard</h1>
+    
+          <div class="main__breadcrumb">
+            <h3>Dashboard</h3>
+          </div>
+          <!-- Legyen egy div alatta, "main__cards" osztállyal.
+    Legyen benne további négy div, "main__card" osztállyal.
+    A main__card divek legyen elosztva két további div -re, ezek osztályai
+     "card__top" és "card__bottom" legyenek.
+    A felsőnek a felső, az alsónak az alsó sarkai legyenek lekerekítve .25 -re a roothoz képest. -->
+            <div class="main__cards">
+              <div class="main__card main__card--blue">
+                <div class="card__top">
+                  <h3>Primary Card</h3>
+                </div>
+                <div class="card__bottom">
+                  <p>View Details<span><i class="fas fa-chevron-right"></i></span></p>
+                  
+                </div>
+              </div>
+              <div class="main__card main__card--yellow">
+                <div class="card__top">
+                  <h3>Warning Card</h3>
+                </div>
+                <div class="card__bottom">
+                  <p>View Details<span><i class="fas fa-chevron-right"></i></span></p>
+                </div>
+              </div>
+              <div class="main__card main__card--green">
+                <div class="card__top">
+                  <h3>Succes Card</h3>
+                </div>
+                <div class="card__bottom">
+                  <p>View Details<span><i class="fas fa-chevron-right"></i></span></p>
+                </div>
+              </div>
+              <div class="main__card main__card--red">
+                <div class="card__top">
+                  <h3>Danger Card</h3>
+                </div>
+                <div class="card__bottom">
+                  <p>View Details<span><i class="fas fa-chevron-right"></i></span></p>
+                </div>
+              </div>
+            </div>
+        </section>
+      </main>
+</body>
+</html>
